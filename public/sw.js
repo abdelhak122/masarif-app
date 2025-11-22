@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'gemini-expense-v2';
+const CACHE_NAME = 'gemini-expense-v3';
 // Changed paths to relative (./) to support GitHub Pages subdirectories
 const urlsToCache = [
   './',
