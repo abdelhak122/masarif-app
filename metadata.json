@@ -1,0 +1,7 @@
+{
+  "name": "Gemini Expense Tracker",
+  "description": "A smart, conversational expense tracker using Gemini Live API for real-time voice interaction and data analysis.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
