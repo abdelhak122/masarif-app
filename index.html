@@ -62,12 +62,11 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
-    <!-- Link to the React Entry Point -->
-    <script type="module" src="/index.tsx"></script>
+    <!-- Link to the React Entry Point - Must be relative for Vite to process it correctly -->
+    <script type="module" src="./index.tsx"></script>
     
     <script>
       if ('serviceWorker' in navigator) {
