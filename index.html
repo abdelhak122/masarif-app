@@ -11,7 +11,6 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2344/2344132.png">
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Custom scrollbar for cleaner UI */
       ::-webkit-scrollbar {
@@ -71,8 +70,8 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          // Register SW relative to the current path
-          navigator.serviceWorker.register('sw.js', { scope: './' })
+          // Register SW with explicit scope for GitHub Pages compatibility
+          navigator.serviceWorker.register('./sw.js', { scope: './' })
             .then(registration => {
               console.log('SW registered: ', registration);
             })
